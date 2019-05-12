@@ -1,8 +1,9 @@
 module.exports = {
     title: 'Hello Kennector',
     description: 'Let\'s playing around',
+    dest:"./docs",
     themeConfig: {
-        docsDir: 'docs',
+        docsDir: 'documentation',
         nav: [
             { text: 'Home', link: '/' },
             {
@@ -54,5 +55,8 @@ module.exports = {
             },
             ['/contact', 'Contact us'],
         ]
+    },
+    markdown:{
+        lineNumbers:true
     }
 }

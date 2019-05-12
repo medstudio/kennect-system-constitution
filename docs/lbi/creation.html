@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Creating LBI Dashboards | Hello Kennector</title>
+    <meta name="description" content="Let&#39;s playing around">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.0d19fd84.css" as="style"><link rel="preload" href="/assets/js/app.97563794.js" as="script"><link rel="preload" href="/assets/js/5.2d2e1d15.js" as="script"><link rel="prefetch" href="/assets/js/2.5416267e.js"><link rel="prefetch" href="/assets/js/3.c75c0dda.js"><link rel="prefetch" href="/assets/js/4.4401a389.js"><link rel="prefetch" href="/assets/js/6.8951dbc3.js"><link rel="prefetch" href="/assets/js/7.9e032ae7.js"><link rel="prefetch" href="/assets/js/8.d3bed891.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0d19fd84.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello Kennector</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Systems</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://kennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect Wa
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://in.kennect.in" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dw.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DW 25
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dsi.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DSI 26
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Emp 30
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Systems</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://kennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect Wa
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://in.kennect.in" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dw.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DW 25
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dsi.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DSI 26
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Emp 30
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Liteweight Business Intellegence</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/lbi/creation.html" class="active sidebar-link">Creating LBI Dashboards</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lbi/creation.html#creating-lbi-dashboards" class="sidebar-link">Creating LBI Dashboards</a></li><li class="sidebar-sub-header"><a href="/lbi/creation.html#drill-down-feature-in-lbi-template" class="sidebar-link">Drill Down Feature in LBI template</a></li></ul></li><li><a href="/lbi/filters.html" class="sidebar-link">Configuring Filters in LBI Apps</a></li><li><a href="/lbi/hierarchy.html" class="sidebar-link">Hierarchy based filters in LBI Dashboards as well as DW Reports</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Forms, Survyes &amp; Quizes</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Journeys</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Data Warehouse &amp; Reports</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Incentive Module</span> <span class="arrow right"></span></p> <!----></div></li><li><a href="/contact.html" class="sidebar-link">Contact us</a></li></ul> </div> <div class="page"> <div class="content"><h2 id="creating-lbi-dashboards"><a href="#creating-lbi-dashboards" aria-hidden="true" class="header-anchor">#</a> Creating LBI Dashboards</h2> <p>LBI is a tool we offer that you can create dashboards with.</p> <h2 id="drill-down-feature-in-lbi-template"><a href="#drill-down-feature-in-lbi-template" aria-hidden="true" class="header-anchor">#</a> Drill Down Feature in LBI template</h2> <p>How to
+in drill object, define maximum drill depth by maxLevel and extra layouts if used</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;drill&quot;: {
+    &quot;maxLevel&quot;: 2,
+    &quot;layout2&quot;: [], // this can be any name for layout unique in this app
+    &quot;layout3&quot;: [],
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="on-click-of-a-row-in-table-chart"><a href="#on-click-of-a-row-in-table-chart" aria-hidden="true" class="header-anchor">#</a> on click of a row in table chart</h3> <p>add a onChartRowSelect parameter to your chart element
+chart must be a table as of now</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;type:&quot;chart&quot;,
+    &quot;name:&quot;chartName&quot;,
+    &quot;onChartRowSelect&quot;: {
+        &quot;layoutName&quot;: &quot;layout2&quot;,
+        &quot;extractParams&quot;: {
+            &quot;product&quot;: &quot;PRODUCT&quot;
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="templatedata-must-look-like"><a href="#templatedata-must-look-like" aria-hidden="true" class="header-anchor">#</a> templateData must look like</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;appTitle&quot;: &quot;Sales Report&quot;,
+    // level 1
+    &quot;showDateModifiedFrom&quot;: &quot;collection from which the doc.lastUpdatedOn will come , doc.pref shuld be this one&quot;,
+    &quot;initialDefaultParams&quot;: {
+        &quot;type&quot;: &quot;direct&quot;,
+        &quot;putUserIdAs&quot;: &quot;empCode&quot;,
+        &quot;fixedParams&quot;: {
+            &quot;emp_kida&quot;: &quot;kilogram&quot;,
+            &quot;emp_type&quot;: &quot;manager&quot;
+        }
+    },
+    &quot;initialDefaultParams2&quot;: {
+        &quot;type&quot;: &quot;by_ec&quot;,
+        &quot;putUserIdAs&quot;: &quot;empCode&quot;,
+        &quot;fixedParams&quot;: {
+            &quot;emp_type&quot;: &quot;manager-just an extra parameter to demonstrate&quot;
+        },
+        &quot;modelName&quot;: &quot;current_emp_code_to_no&quot;,
+        &quot;ecName&quot;: &quot;get_emp_data&quot;,
+        &quot;sendUserIdInEcParamsAs&quot;: &quot;&quot;,
+        &quot;fixedEcParams&quot;: {},
+        &quot;extractParams&quot;: {
+            &quot;EMP_NO&quot;: &quot;EMP_NO&quot;
+        }
+    },
+    // level 1
+    &quot;filters&quot;: {
+        ... explained in filters.md
+    },
+    // level 1
+    &quot;layout&quot;: [
+        {
+            &quot;type&quot;: &quot;card&quot;,
+            &quot;elements&quot;: [
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;onChartRowSelect&quot;: {
+                        &quot;layoutName&quot;: &quot;layout2&quot;,
+                        &quot;extractParams&quot;: {
+                            &quot;product&quot;: &quot;PRODUCT&quot;
+                        }
+                    },
+                    &quot;name&quot;: &quot;product_ws1_table&quot;
+                }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;card&quot;,
+            &quot;elements&quot;: [
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;onChartRowSelect&quot;: {
+                        &quot;layoutName&quot;: &quot;layout2&quot;,
+                        &quot;extractParams&quot;: {
+                            &quot;product&quot;: &quot;PRODUCT&quot;
+                        }
+                    },
+                    &quot;name&quot;: &quot;product_ws2_table&quot;
+                }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;chart&quot;,
+            &quot;name&quot;: &quot;bn1&quot;
+        },
+        {
+            &quot;type&quot;: &quot;two-big-numbers&quot;,
+            &quot;elements&quot;: [
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;bn1&quot;
+                },
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;bn1&quot;
+                }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;accordian&quot;,
+            &quot;elements&quot;: [
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;ppsc1&quot;
+                },
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;sales_trend&quot;
+                },
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;product_ws1_table&quot;
+                }
+            ]
+        },
+        {
+            &quot;type&quot;: &quot;card&quot;,
+            &quot;elements&quot;: [
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;sales_trend&quot;
+                },
+                {
+                    &quot;type&quot;: &quot;chart&quot;,
+                    &quot;name&quot;: &quot;product_ws1_table&quot;
+                }
+            ]
+        }
+    ],
+    // level 1
+    &quot;drill&quot;: {
+        &quot;maxLevel&quot;: 2,
+        &quot;layout2&quot;: [
+            {
+                &quot;type&quot;: &quot;chart&quot;,
+                &quot;name&quot;: &quot;bn1&quot;
+            },
+            {
+                &quot;type&quot;: &quot;chart&quot;,
+                &quot;name&quot;: &quot;bn1&quot;
+            },
+            {
+                &quot;type&quot;: &quot;card&quot;,
+                &quot;elements&quot;: [
+                    {
+                        &quot;type&quot;: &quot;chart&quot;,
+                        &quot;onChartRowSelect&quot;: {
+                            &quot;layoutName&quot;: &quot;layout2&quot;,
+                            &quot;extractParams&quot;: {
+                                &quot;product&quot;: &quot;PRODUCT&quot;
+                            }
+                        },
+                        &quot;name&quot;: &quot;product_ws1_table&quot;
+                    }
+                ]
+            }
+        ]
+    }
+    // level 1
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br></div></div><h3 id="minisurvey-inside-an-lbi-dashboard"><a href="#minisurvey-inside-an-lbi-dashboard" aria-hidden="true" class="header-anchor">#</a> miniSurvey inside an lbi dashboard</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>//layout.push(
+{
+    &quot;type&quot;: &quot;mini_survey&quot;,
+    &quot;title&quot;: &quot;Details&quot;,
+    &quot;name&quot;: &quot;mini_survey_name&quot;,
+    &quot;surveyJSON&quot;: {},
+
+    // pre render decision maker
+    &quot;renderDecisionBy&quot;: &quot;SERVICE&quot;,
+    &quot;preRenderEC&quot;: &quot;rx_planner&quot;,
+    &quot;preRenderECModelName&quot;: &quot;modelname&quot;,
+    // optional , either use preRenderEC or preRenderService one of them  
+    &quot;preRenderService&quot;: &quot;managerServiceName&quot;,
+
+    // other params
+    &quot;sendEmployerGIDAs&quot;: &quot;vs_id&quot;,
+    &quot;sendTenantGIDAs&quot;: &quot;tgid&quot;,
+    &quot;extraECParams&quot;: {},
+
+    // on complete stuff
+    &quot;onSubmitService&quot;: &quot;&quot;,
+    &quot;extraServiceParams&quot;: {},
+    &quot;masterDataMap&quot;: {}
+}
+//)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h4 id="response-of-a-minisurvey-pre-conditioner-should-look-like"><a href="#response-of-a-minisurvey-pre-conditioner-should-look-like" aria-hidden="true" class="header-anchor">#</a> Response of a miniSurvey Pre-conditioner should look like</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>// serviceResponse
+// miniSurveyPreRenderResponse should be 
+{
+    mode: hidden / display / edit
+    data: { key: 'previously filled data' }
+    choicesMap: {
+        questionName: [{
+            text, value
+        }]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/" class="prev router-link-active">
+          Home
+        </a></span> <span class="next"><a href="/lbi/filters.html">
+          Configuring Filters in LBI Apps
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.97563794.js" defer></script><script src="/assets/js/5.2d2e1d15.js" defer></script>
+  </body>
+</html>

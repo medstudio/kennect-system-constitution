@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hierarchy based filters in LBI Dashboards as well as DW Reports | Hello Kennector</title>
+    <meta name="description" content="Let&#39;s playing around">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.0d19fd84.css" as="style"><link rel="preload" href="/assets/js/app.97563794.js" as="script"><link rel="preload" href="/assets/js/7.9e032ae7.js" as="script"><link rel="prefetch" href="/assets/js/2.5416267e.js"><link rel="prefetch" href="/assets/js/3.c75c0dda.js"><link rel="prefetch" href="/assets/js/4.4401a389.js"><link rel="prefetch" href="/assets/js/5.2d2e1d15.js"><link rel="prefetch" href="/assets/js/6.8951dbc3.js"><link rel="prefetch" href="/assets/js/8.d3bed891.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0d19fd84.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello Kennector</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Systems</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://kennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect Wa
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://in.kennect.in" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dw.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DW 25
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dsi.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DSI 26
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Emp 30
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Systems</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://kennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect Wa
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://in.kennect.in" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dw.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DW 25
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dsi.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DSI 26
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://api.betkennect.xyz" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Emp 30
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Liteweight Business Intellegence</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/lbi/creation.html" class="sidebar-link">Creating LBI Dashboards</a></li><li><a href="/lbi/filters.html" class="sidebar-link">Configuring Filters in LBI Apps</a></li><li><a href="/lbi/hierarchy.html" class="active sidebar-link">Hierarchy based filters in LBI Dashboards as well as DW Reports</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lbi/hierarchy.html#hierarchy-based-filters-in-lbi-dashboards-as-well-as-dw-reports" class="sidebar-link">Hierarchy based filters in LBI Dashboards as well as DW Reports</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Forms, Survyes &amp; Quizes</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Journeys</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Data Warehouse &amp; Reports</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Incentive Module</span> <span class="arrow right"></span></p> <!----></div></li><li><a href="/contact.html" class="sidebar-link">Contact us</a></li></ul> </div> <div class="page"> <div class="content"><h2 id="hierarchy-based-filters-in-lbi-dashboards-as-well-as-dw-reports"><a href="#hierarchy-based-filters-in-lbi-dashboards-as-well-as-dw-reports" aria-hidden="true" class="header-anchor">#</a> Hierarchy based filters in LBI Dashboards as well as DW Reports</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+filters = {
+    &quot;hrcy&quot;: {
+        &quot;type&quot;: &quot;hrcy&quot;,
+        &quot;modelName&quot;: &quot;master_flat_hierarchy&quot;,// table which contains hrcy data 
+        // table should have 5 columns
+
+        // user userRole display         boss 
+        // (id) (role)  (name/HQ/Rere)  (bossid) 
+        // 1502  MR      omkar            1101  
+        &quot;userKey&quot;: &quot;employee_position_id&quot;,
+        &quot;userRoleKey&quot;: &quot;role&quot;,
+        &quot;displayKey&quot;: &quot;employee_position_id&quot;,
+        &quot;bossKey&quot;: &quot;boss_position_id&quot;,
+
+
+        &quot;filterKey&quot;: &quot;selected_boss_pos_id&quot;, // field by which name we want to add this value of user selected toi the filters
+        &quot;filterRoleKey&quot;: &quot;boss_role&quot;, // under development - not supported
+
+        // UI me kya display karna hai
+        &quot;panelDisplayName&quot;: &quot;Select Lead&quot;,
+
+        // to map the employee using this to the HRCY, we need conversion of EmployerGID to hrcy-accepted-field in this case it is territory/ sometimes its HQ, 
+        &quot;selfRoleConfig&quot;: {
+            &quot;modelName&quot;: &quot;master_flat_hierarchy&quot;,
+            &quot;ecName&quot;: &quot;get_terr_by_emp&quot;,
+            &quot;employerGIDField&quot;: &quot;emp&quot;,
+            /* in DW system, it has 3 modes */
+            &quot;type&quot;: &quot;by_ec&quot;,
+            &quot;typeComment&quot;: &quot;by_ec/by_emp_code/direct&quot;,
+            &quot;part1&quot;: &quot;direct&quot;,
+            &quot;value&quot;: &quot;Medley&quot;,
+            &quot;displayValue&quot;: &quot;Company&quot;,
+            &quot;part2&quot;: &quot;by_ec&quot;,// implies that it should return 4 keys userKey, userRoleKey, bossKey, displayKey
+            &quot;ecName&quot;: &quot;hrcy_egid_position_mapper&quot;,
+            &quot;employerGIDField&quot;: &quot;Position_No&quot;
+        },
+        // Role Hierarchy Logic
+        &quot;roles&quot;: [
+            {
+                &quot;val&quot;: &quot;NVL&quot;, // should correspond to Values in Database table
+                &quot;level&quot;: 10, // relative to this array , should be less for high roles
+                &quot;text&quot;: &quot;National Value Lead&quot; // should tell what to display
+            },
+            {
+                &quot;val&quot;: &quot;RVL&quot;,
+                &quot;level&quot;: 20,
+                &quot;text&quot;: &quot;Regional Value Lead&quot;
+            },
+            {
+                &quot;val&quot;: &quot;VS&quot;,
+                &quot;level&quot;: 30,
+                &quot;text&quot;: &quot;Value Specialist&quot;
+            }
+        ]
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/lbi/filters.html" class="prev">
+          Configuring Filters in LBI Apps
+        </a></span> <span class="next"><a href="/contact.html">
+          Contact us
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.97563794.js" defer></script><script src="/assets/js/7.9e032ae7.js" defer></script>
+  </body>
+</html>
