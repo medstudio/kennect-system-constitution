@@ -1,0 +1,15 @@
+{
+  "name": "kennect-system-constitution",
+  "version": "1.0.0",
+  "description": "The official documentation of Kennect;s systems in place for employees to use",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "author": "Kennect",
+  "license": "ISC",
+  "dependencies": {
+    "vuepress": "^0.14.11"
+  }
+}
