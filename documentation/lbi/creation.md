@@ -31,6 +31,24 @@ chart must be a table as of now
 }
 ```
 
+### Reference Table of filters applied
+
+for direct showing filters, use following: (add this to root of `templateData`)
+```
+"referenceTable": {
+    "type": "direct"
+}
+```
+for EC derived reference values use following:
+```
+"referenceTable": {
+    "type": "by_ec",
+    "modelName": "name_of_collection",
+    "ecName": "name_of_ec",
+    "showTableWise":true // will show table wise filters
+}
+```
+
 ### templateData must look like
 ``` 
 {

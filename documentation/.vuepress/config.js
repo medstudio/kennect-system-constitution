@@ -24,9 +24,9 @@ module.exports = {
                 title: 'Liteweight Business Intellegence',
                 collapsable: true,
                 children: [
-                    '/lbi/creation',
-                    '/lbi/filters',
-                    '/lbi/hierarchy',
+                    ['/lbi/creation','Creation'],
+                    ['/lbi/filters','Filters'],
+                    ['/lbi/hierarchy','Hierarchy'],
                 ]
             },
             {
