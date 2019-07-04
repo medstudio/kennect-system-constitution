@@ -39,6 +39,8 @@ module.exports = {
                 title: 'Journeys',
                 collapsable: true,
                 children: [
+                    ['/journeys/create.md','Creating Journey & Manifests'],
+                    ['/journeys/storage.md','Writing 3rd Storage in Manifests']
                 ]
             },
             {
