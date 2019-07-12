@@ -30,9 +30,11 @@ module.exports = {
                 ]
             },
             {
-                title: 'Forms, Survyes & Quizes',
+                title: 'Forms, Surveys & Quizes',
                 collapsable: true,
                 children: [
+                    ['surveys/me-app', "Multi Entry Apps"],
+                    // ['surveys/me-app', "Quizes"]
                 ]
             },
             {
