@@ -1,5 +1,5 @@
-# Manifest 
-    is a declaration of how a journey should behave
+# Manifest.json
+is a declaration of how a journey should behave
 
 ## **manifest.json file should have the following properties**
 

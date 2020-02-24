@@ -42,6 +42,8 @@ module.exports = {
                 collapsable: true,
                 children: [
                     ['/journeys/create.md','Creating Journey & Manifests'],
+                    ['/journeys/manifest.md','Writing Manifests'],
+                    ['/journeys/formulas.md','Using Formulas'],
                     ['/journeys/storage.md','Writing 3rd Storage in Manifests']
                 ]
             },
@@ -62,5 +64,12 @@ module.exports = {
     },
     markdown:{
         lineNumbers:true
-    }
+    },
+    configureWebpack: {
+        resolve: {
+          alias: {
+            '@assets': 'assets'
+          }
+        }
+      }
 }
