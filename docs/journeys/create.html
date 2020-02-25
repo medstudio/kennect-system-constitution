@@ -134,7 +134,7 @@ add below lines to first part</p> <div class="language- line-numbers-mode"><pre 
         formula: (row)=&gt;{
             return {
                 created_on: new Date().toString(),
-                joined_on: (row.joined_on? row.joined_on : row.new Date().toString())
+                joined_on: (row.joined_on? row.joined_on : new Date().toString())
             }
         },  
     },
@@ -147,7 +147,7 @@ add below lines to second part</p> <div class="language- line-numbers-mode"><pre
         formula: (row)=&gt;{
             return {
                 created_on: new Date().toString(),
-                joined_on: (row.joined_on? row.joined_on : row.new Date().toString())
+                joined_on: (row.joined_on? row.joined_on : new Date().toString())
             }
         },  
     },

@@ -129,7 +129,7 @@ formulas.addKeysWithFormula("in_sales", "raw_emp_list", [
         formula: (row)=>{
             return {
                 created_on: new Date().toString(),
-                joined_on: (row.joined_on? row.joined_on : row.new Date().toString())
+                joined_on: (row.joined_on? row.joined_on : new Date().toString())
             }
         },  
     },
@@ -145,7 +145,7 @@ formulas.addKeysWithFormula("in_file_emp_list", "emp_sales_by_month", [
         formula: (row)=>{
             return {
                 created_on: new Date().toString(),
-                joined_on: (row.joined_on? row.joined_on : row.new Date().toString())
+                joined_on: (row.joined_on? row.joined_on : new Date().toString())
             }
         },  
     },
@@ -165,7 +165,7 @@ git push origin master
 This will allow you to see the journey in 
 
     https://dw.kennectweb.com 
-
+outputCollectionsNames
 login with credentials provided to you for test client
 
 then click on ``'Core Data Management'`` in a sidebar which opens from ``top left arrow``.
@@ -180,3 +180,5 @@ Upload the files you created into this and run the journey.
 After the journey is complete, you may connect to the client-database and see the output colelctions and alternatively, by clicking on teh tab named  ``MANAGE CORE DATA``.
 
 Verify that you see the latest data uploaded. Try running the journey with a new set of data and check if you see new data in output collections.
+
+
