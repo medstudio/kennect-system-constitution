@@ -7,7 +7,7 @@
     <meta name="description" content="Let&#39;s playing around">
     
     
-    <link rel="preload" href="/assets/css/0.styles.0d19fd84.css" as="style"><link rel="preload" href="/assets/js/app.a78d1e5d.js" as="script"><link rel="preload" href="/assets/js/12.fde6746a.js" as="script"><link rel="prefetch" href="/assets/js/10.388533f3.js"><link rel="prefetch" href="/assets/js/11.79bd7c15.js"><link rel="prefetch" href="/assets/js/13.45a06759.js"><link rel="prefetch" href="/assets/js/2.8e1a1a99.js"><link rel="prefetch" href="/assets/js/3.5e9b2867.js"><link rel="prefetch" href="/assets/js/4.94399709.js"><link rel="prefetch" href="/assets/js/5.a789b50f.js"><link rel="prefetch" href="/assets/js/6.654ed093.js"><link rel="prefetch" href="/assets/js/7.62da925f.js"><link rel="prefetch" href="/assets/js/8.f5a09d4b.js"><link rel="prefetch" href="/assets/js/9.da801ed4.js">
+    <link rel="preload" href="/assets/css/0.styles.0d19fd84.css" as="style"><link rel="preload" href="/assets/js/app.c2c23e9d.js" as="script"><link rel="preload" href="/assets/js/15.891c6d97.js" as="script"><link rel="prefetch" href="/assets/js/10.73a828bb.js"><link rel="prefetch" href="/assets/js/11.3099fec9.js"><link rel="prefetch" href="/assets/js/12.a7c6316c.js"><link rel="prefetch" href="/assets/js/13.83a058d5.js"><link rel="prefetch" href="/assets/js/14.58b2bd87.js"><link rel="prefetch" href="/assets/js/16.e7b62388.js"><link rel="prefetch" href="/assets/js/2.8e1a1a99.js"><link rel="prefetch" href="/assets/js/3.2a46a478.js"><link rel="prefetch" href="/assets/js/4.fa1b3b56.js"><link rel="prefetch" href="/assets/js/5.a789b50f.js"><link rel="prefetch" href="/assets/js/6.654ed093.js"><link rel="prefetch" href="/assets/js/7.4b8b68fb.js"><link rel="prefetch" href="/assets/js/8.c8a9955c.js"><link rel="prefetch" href="/assets/js/9.2f0fdbb1.js">
     <link rel="stylesheet" href="/assets/css/0.styles.0d19fd84.css">
   </head>
   <body>
@@ -49,7 +49,7 @@ tref: &quot;survey_advance_multi_entry&quot;
 // templateDataFormat
 &quot;templateData&quot; = stringify when making the call {
     &quot;surveyTitle&quot;: &quot;title&quot;,
-    
+
     &quot;periodAutoFills&quot;: {
         &quot;target&quot;: &quot;month&quot;,
         &quot;periodType&quot;: &quot;next_2_months&quot;,
@@ -58,11 +58,11 @@ tref: &quot;survey_advance_multi_entry&quot;
         &quot;periodFormat&quot;: &quot;MM-Y&quot;,
         &quot;periodDisplayFormat&quot;: &quot;MM-Y&quot;
     },
-    
+
     &quot;directEntryMode&quot;: true,
     &quot;dontLimitEntries&quot;: true,
     &quot;maxAttempts&quot;: 4,
-    
+
     &quot;remoteDataStorageName&quot;: &quot;remoteDataStorageName&quot;,
     &quot;allowDeleting&quot;: true,
     &quot;allowEditing&quot;: true,
@@ -119,10 +119,28 @@ tref: &quot;survey_advance_multi_entry&quot;
             &quot;target&quot;: &quot;area&quot;,
             &quot;source&quot;: &quot;city&quot;,
             &quot;sourceKey&quot;: &quot;CITY&quot;
+        },
+        {
+            &quot;type&quot;: &quot;choices_in_matrix_dynamic_from_ec&quot;,
+            &quot;dataModelName&quot;: &quot;core_stockist_secondary_raw_data&quot;,
+            &quot;ecName&quot;: &quot;get_secondary_details&quot;,
+            &quot;target&quot;: &quot;extracted_data&quot;,
+            &quot;source&quot;: &quot;customer_month_product&quot;, // depend on other question choices
+            &quot;sourceKey&quot;: &quot;customer_month_product&quot;,
+            &quot;defaultValueIdx&quot;: 0 // if given only put that index data in matrix
+        },
+        {
+            &quot;type&quot;: &quot;choices_in_matrix_dynamic_from_ec&quot;,
+            &quot;dataModelName&quot;: &quot;user_access&quot;,
+            &quot;ecName&quot;: &quot;dd&quot;,
+            &quot;target&quot;: &quot;employee_info&quot;,
+            &quot;source&quot;: &quot;employerGID&quot;, // depend on employerGID, not depend on other question choices.
+            &quot;sourceKey&quot;: &quot;userEGID&quot;,
+            &quot;defaultValueIdx&quot;: 0 //if given only put that index data in matrix
         }
     ],
     &quot;surveyJSON&quot;: {},
-    &quot;surveyValidations&quot;: [ 
+    &quot;surveyValidations&quot;: [
         // doubtful that its implemented
         {
             &quot;type&quot;: &quot;current-month&quot;,
@@ -160,7 +178,7 @@ tref: &quot;survey_advance_multi_entry&quot;
         }
     }
 }
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
         ←
         <a href="/lbi/hierarchy.html" class="prev">
           Hierarchy
@@ -169,6 +187,6 @@ tref: &quot;survey_advance_multi_entry&quot;
         </a>
         →
       </span></p></div> </div> <!----></div></div>
-    <script src="/assets/js/app.a78d1e5d.js" defer></script><script src="/assets/js/12.fde6746a.js" defer></script>
+    <script src="/assets/js/app.c2c23e9d.js" defer></script><script src="/assets/js/15.891c6d97.js" defer></script>
   </body>
 </html>
