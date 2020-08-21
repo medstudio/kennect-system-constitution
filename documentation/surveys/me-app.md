@@ -1,6 +1,7 @@
 ## Creating Multi-Entry-Survey Apps
 
 ## How Apps Work 
+
     # pref
     # name: display name
     # remoteDataStorageName
@@ -24,7 +25,7 @@ tref: "survey_advance_multi_entry"
 // templateDataFormat
 "templateData" = stringify when making the call {
     "surveyTitle": "title",
-    
+
     "periodAutoFills": {
         "target": "month",
         "periodType": "next_2_months",
@@ -33,11 +34,11 @@ tref: "survey_advance_multi_entry"
         "periodFormat": "MM-Y",
         "periodDisplayFormat": "MM-Y"
     },
-    
+
     "directEntryMode": true,
     "dontLimitEntries": true,
     "maxAttempts": 4,
-    
+
     "remoteDataStorageName": "remoteDataStorageName",
     "allowDeleting": true,
     "allowEditing": true,
@@ -94,10 +95,28 @@ tref: "survey_advance_multi_entry"
             "target": "area",
             "source": "city",
             "sourceKey": "CITY"
+        },
+        {
+            "type": "choices_in_matrix_dynamic_from_ec",
+            "dataModelName": "core_stockist_secondary_raw_data",
+            "ecName": "get_secondary_details",
+            "target": "extracted_data",
+            "source": "customer_month_product", // depend on other question choices
+            "sourceKey": "customer_month_product",
+            "defaultValueIdx": 0 // if given only put that index data in matrix
+        },
+        {
+            "type": "choices_in_matrix_dynamic_from_ec",
+            "dataModelName": "user_access",
+            "ecName": "dd",
+            "target": "employee_info",
+            "source": "employerGID", // depend on employerGID, not depend on other question choices.
+            "sourceKey": "userEGID",
+            "defaultValueIdx": 0 //if given only put that index data in matrix
         }
     ],
     "surveyJSON": {},
-    "surveyValidations": [ 
+    "surveyValidations": [
         // doubtful that its implemented
         {
             "type": "current-month",
@@ -136,4 +155,3 @@ tref: "survey_advance_multi_entry"
     }
 }
 ```
-
