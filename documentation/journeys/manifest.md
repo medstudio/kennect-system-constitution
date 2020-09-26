@@ -1,11 +1,12 @@
 # Manifest.json
+
 is a declaration of how a journey should behave
 
 ## **manifest.json file should have the following properties**
 
 ```javascript
 {
-    "name": "test-journey" 
+    "name": "test-journey"
     "displayName": "test-journey",
     "masterData": false,
     "activated": true,
@@ -23,7 +24,7 @@ is a declaration of how a journey should behave
 "name" : The name of the manifest should be unique across a tenant journeys folder. The journey folder name should be same as this name. NOTE: this is a required field
 
 "displayName" : The display name which will be shown on the front-end. NOTE: this is a required field
-    
+
 "masterData" : If the journey is a master data journey then it should have a boolean value determining the same. true specifies master data journey,
 false specifies core data journey
 
@@ -32,17 +33,14 @@ false specifies core data journey
 "cron": Cron object will have key value pair of schedule and cron string.
 The cron string will specify on when it will run using the CRON Manager.
 The server time is synced as IST.
-    
+
 "inputConfig": Input config will be an array refer [inputConfig.md](inputConfig.md) for more details on input config.
 
 "dependencies": Dependencies will be an array refer [dependencies.md](dependencies.md) for more details on input config.
-    
 
 "validators": Validators will be an array refer [validators.md](validators.md) for more details on validators.
 
-
 "processors": This property is deprecated and should no longer be written in the manifest.
-
 
 "outputCollectionNames": This specifies the collections names which are to be dumped in the warehouse of the given tenant for which the journey is running. For more details on this refer [outputCollectionsNames.md](outputCollectionsNames.md).
 
@@ -78,4 +76,40 @@ The server time is synced as IST.
     "upload": true
 }
 
+```
+
+## manifest.json file optional thing
+
+```javascript
+    /**User Synchronization: it first check for allowUserSynchronization is true
+    then find employee_list collection in outputSysCollectionNames, if available
+    then allow for sync also tenant should have access to user sync through journey
+    **/
+
+
+    "allowUserSynchronization": true, // use for user Synchronization
+    // create collection  as sys_employee_list
+    "outputSysCollectionNames": [
+        "employee_list"
+    ]
+
+    /**
+     * Context Injection: it's result is available in process.js
+      in argument  utils = {
+                     context: {
+                         some_identifier_name: [{emp_id: 9292, position: LK ..}, ..]
+                     }
+                   }
+    */
+    "injectContext": [
+        {
+            "type": "by_ec",
+            "ecv2name": "get_emp_info",
+            "name": "some_identifier_name",   // context id name
+            "userEgidFieldName": "emp_id", // userId params used in ec
+            "limit": 1, // it by default 1, if provided then it take 1 n data in object
+            "fixedParams": { // params send to Ec
+                "month": "Jan"
+            }
+        ]
 ```
