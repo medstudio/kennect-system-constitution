@@ -181,4 +181,15 @@ After the journey is complete, you may connect to the client-database and see th
 
 Verify that you see the latest data uploaded. Try running the journey with a new set of data and check if you see new data in output collections.
 
+## 3. **GENERATE-PARAMS.JS**
+ create ``generateParams.js`` file in journey folder.
+
+ it can be use as a pre-processor params if survey config available else as a processParams. 
+ ```
+ module.exports = async (params = {}, utils) => {
+     // utils object, available in this scope, will contain the functions needed to you. such as moment
+     return params
+}
+
+```
 
