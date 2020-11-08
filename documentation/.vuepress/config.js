@@ -41,10 +41,10 @@ module.exports = {
                 title: 'Journeys',
                 collapsable: true,
                 children: [
-                    ['/journeys/create.md','Creating Journey & Manifests'],
-                    ['/journeys/manifest.md','Writing Manifests'],
-                    ['/journeys/formulas.md','Using Formulas'],
-                    ['/journeys/storage.md','Writing 3rd Storage in Manifests']
+                    ['/journeys/create.md','Overview'],
+                    ['/journeys/manifest.md','Writing Manifests for Journeys'],
+                    ['/journeys/formulas.md','Using Formulas In Journeys'],
+                    ['/journeys/storage.md','Writing Other Storage Targets in Manifests']
                 ]
             },
             {

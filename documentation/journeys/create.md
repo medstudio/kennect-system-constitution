@@ -164,8 +164,11 @@ git push origin master
 
 This will allow you to see the journey in 
 
-    https://dw.kennectweb.com 
-outputCollectionsNames
+    https://dw.prd.kennectweb.com 
+
+``outputCollectionsNames``
+is where we declare the names of target collections which are outputs to yhe journeys
+
 login with credentials provided to you for test client
 
 then click on ``'Core Data Management'`` in a sidebar which opens from ``top left arrow``.
