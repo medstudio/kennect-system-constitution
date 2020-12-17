@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Hello Kennector',
     description: 'Let\'s playing around',
-    dest:"./docs",
+    dest: "./docs",
     themeConfig: {
         docsDir: 'documentation',
         nav: [
@@ -24,9 +24,9 @@ module.exports = {
                 title: 'Liteweight Business Intellegence',
                 collapsable: true,
                 children: [
-                    ['/lbi/creation','Creation'],
-                    ['/lbi/filters','Filters'],
-                    ['/lbi/hierarchy','Hierarchy'],
+                    ['/lbi/creation', 'Creation'],
+                    ['/lbi/filters', 'Filters'],
+                    ['/lbi/hierarchy', 'Hierarchy'],
                 ]
             },
             {
@@ -41,10 +41,16 @@ module.exports = {
                 title: 'Journeys',
                 collapsable: true,
                 children: [
-                    ['/journeys/create.md','Overview'],
+                    ['/journeys/overview.md','Overview'],
                     ['/journeys/manifest.md','Writing Manifests for Journeys'],
                     ['/journeys/formulas.md','Using Formulas In Journeys'],
                     ['/journeys/storage.md','Writing Other Storage Targets in Manifests']
+
+                    ['/journeys/inputConfig.md', 'InputConfig in Manifests'],
+                    ['/journeys/dependencies.md', 'Dependencies in Manifests'],
+                    ['/journeys/outputCollectionsNames.md', 'Output Collections Names in Manifests'],
+                    ['/journeys/validators.md', 'Validators in Manifests'],
+                    ['/journeys/masterDataMap.md', 'MasterDataMap'],
                 ]
             },
             {
@@ -62,14 +68,14 @@ module.exports = {
             ['/contact', 'Contact us'],
         ]
     },
-    markdown:{
-        lineNumbers:true
+    markdown: {
+        lineNumbers: true
     },
     configureWebpack: {
         resolve: {
-          alias: {
-            '@assets': 'assets'
-          }
+            alias: {
+                '@assets': 'assets'
+            }
         }
-      }
+    }
 }
