@@ -46,6 +46,7 @@
     "id": "inputSalesData",
     "name": "inputSalesData",
     "type": "file",
+    "fileType": "csv_zip",// like emailconf    
     "fields": {
         "NEW_NAME_TRN_MFRCD": "TRN_MFRCD",
         "NEW_NAME_TRN_PARTY1": "TRN_PARTY1",
@@ -155,7 +156,17 @@
     "name": "master_cities",
     "type": "email",
     "subjectHeader": "",
+    "sender": "Bsmart@sanofi.com", // optional, partialmatch allowed    
     "filename": "master_cities.csv",
+    "fileType": "csv_zip",
+    // fileType: default  =csv
+    // ENUM: "csv/csv_zip/xls/xls_zip",
+    // fileType==csv_zip , only files in root of zip will be taken , multiple files will be assumed to be one colleciton only.
+    "since": {
+        "value": 3,
+        "unit": "days"
+    },
+    "unseen":true, // optional , true/false , consider unseen mails, 
     "variables": {},
     "fields": {
         "NEW_NAME_CUST_NAME": "CUST_NAME",

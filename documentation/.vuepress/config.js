@@ -9,12 +9,11 @@ module.exports = {
             {
                 text: 'Systems',
                 items: [
-                    { text: 'Kennect Wa', link: 'https://kennect.xyz' },
-                    { text: 'Kennect App', link: 'https://in.kennect.in' },
-                    { text: 'Admin 20', link: 'https://api.kennectweb.com' },
-                    { text: 'DW 25', link: 'https://dw.betkennect.xyz' },
-                    { text: 'DSI 26', link: 'https://dsi.betkennect.xyz' },
-                    { text: 'Emp 30', link: 'https://api.kennectweb.com' },
+                    { text: 'Kennect App', link: 'https://knx.prd.kennectweb.com/' },
+                    { text: 'Admin 20', link: 'https://acc.prd.kennectweb.com/' },
+                    { text: 'DW 25', link:  'https://dw.prd.kennectweb.com' },
+                    { text: 'DSI 26', link: 'https://dsi.prd.kennectweb.com' },
+                    { text: 'Emp 30', link: 'https://knx.prd.kennectweb.com' },
                 ]
             },
         ],
@@ -41,11 +40,10 @@ module.exports = {
                 title: 'Journeys',
                 collapsable: true,
                 children: [
-                    ['/journeys/overview.md','Overview'],
-                    ['/journeys/manifest.md','Writing Manifests for Journeys'],
-                    ['/journeys/formulas.md','Using Formulas In Journeys'],
-                    ['/journeys/storage.md','Writing Other Storage Targets in Manifests']
-
+                    ['/journeys/overview.md', 'Overview'],
+                    ['/journeys/manifest.md', 'Writing Manifests for Journeys'],
+                    ['/journeys/formulas.md', 'Using Formulas In Journeys'],
+                    ['/journeys/storage.md', 'Writing Other Storage Targets in Manifests'],
                     ['/journeys/inputConfig.md', 'InputConfig in Manifests'],
                     ['/journeys/dependencies.md', 'Dependencies in Manifests'],
                     ['/journeys/outputCollectionsNames.md', 'Output Collections Names in Manifests'],
@@ -65,9 +63,10 @@ module.exports = {
                 children: [
                 ]
             },
-            ['/contact', 'Contact us'],
+            ['/contact', 'Contact us']
         ]
     },
+    sidebarCmg:"",
     markdown: {
         lineNumbers: true
     },

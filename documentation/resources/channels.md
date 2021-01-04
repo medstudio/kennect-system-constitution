@@ -29,3 +29,9 @@ constants define default arguments. passed arguments always over-write defaults.
     },
 }
 ```
+
+constants: are default values,
+they will be ovrridden if specified in options while calling the channel.
+
+how to call the channel?
+``ws.channels.fetch({ ...options }).then(response=>{ useHere })``
