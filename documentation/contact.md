@@ -1,3 +1,5 @@
 ## Lead Mischeif Officer
-    Omkar Dusane,
-    omkar.dusane@kennectin
+    
+Omkar Dusane,
+
+omkar.dusane@kennectin

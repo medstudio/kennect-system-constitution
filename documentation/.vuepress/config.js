@@ -1,7 +1,12 @@
 module.exports = {
     title: 'Hello Kennector',
-    description: 'Let\'s playing around',
+    description: 'Let\'s start playing around',
     dest: "./docs",
+    head:[
+        ['link', { rel: "icon", type: "image/png", sizes: "64x64", href: "/assets/favicon.png"}],
+        ['link', { rel: "shortcut icon", type: "image/png", sizes: "64x64", href: "/assets/favicon.png"}],
+        
+    ],
     themeConfig: {
         docsDir: 'documentation',
         nav: [
@@ -12,7 +17,7 @@ module.exports = {
                     { text: 'Kennect App', link: 'https://knx.prd.kennectweb.com/' },
                     { text: 'Admin 20', link: 'https://acc.prd.kennectweb.com/' },
                     { text: 'DW 25', link:  'https://dw.prd.kennectweb.com' },
-                    { text: 'DSI 26', link: 'https://dsi.prd.kennectweb.com' },
+                    { text: 'DSI 20', link: 'https://dsi.prd.kennectweb.com' },
                     { text: 'Emp 30', link: 'https://knx.prd.kennectweb.com' },
                 ]
             },
@@ -55,14 +60,17 @@ module.exports = {
                 title: 'Data Warehouse & Reports',
                 collapsable: true,
                 children: [
+                    ['/dwr/basics', 'Basics'],
+                    ['/dwr/advanced', 'Advanced'],
+                    ['/dwr/newFeatures', 'New Features'],
                 ]
             },
-            {
-                title: 'Incentive Module',
-                collapsable: true,
-                children: [
-                ]
-            },
+            // {
+            //     title: 'Incentive Module',
+            //     collapsable: true,
+            //     children: [
+            //     ]
+            // },
             ['/contact', 'Contact us']
         ]
     },

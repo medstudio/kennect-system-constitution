@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev documentation",
-    "build": "vuepress build documentation && echo docs.kennectweb.com>> docs/CNAME"
+    "build": "vuepress build documentation && echo docs.kennectweb.com>> docs/CNAME",
+    "build2": "vuepress build documentation"
   },
   "author": "Kennect",
   "license": "ISC",
