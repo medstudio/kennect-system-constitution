@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pivot table | Hello Kennector</title>
+    <meta name="description" content="Let&#39;s start playing around">
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" sizes="64x64" href="/assets/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.8eb0d87d.css" as="style"><link rel="preload" href="/assets/js/app.edd9e7ca.js" as="script"><link rel="preload" href="/assets/js/8.49181e46.js" as="script"><link rel="prefetch" href="/assets/js/10.4d448ecd.js"><link rel="prefetch" href="/assets/js/11.96accd3f.js"><link rel="prefetch" href="/assets/js/12.12ef2798.js"><link rel="prefetch" href="/assets/js/13.839d4ad7.js"><link rel="prefetch" href="/assets/js/14.84664bd3.js"><link rel="prefetch" href="/assets/js/15.334b5b7d.js"><link rel="prefetch" href="/assets/js/16.a2d7bc76.js"><link rel="prefetch" href="/assets/js/17.09765858.js"><link rel="prefetch" href="/assets/js/18.ce910bb1.js"><link rel="prefetch" href="/assets/js/19.328b130b.js"><link rel="prefetch" href="/assets/js/2.7b21ce08.js"><link rel="prefetch" href="/assets/js/20.229d4fa9.js"><link rel="prefetch" href="/assets/js/21.b6d146db.js"><link rel="prefetch" href="/assets/js/22.bbcb1a69.js"><link rel="prefetch" href="/assets/js/23.2cc4e2fc.js"><link rel="prefetch" href="/assets/js/24.33ff386c.js"><link rel="prefetch" href="/assets/js/25.53e9781b.js"><link rel="prefetch" href="/assets/js/3.5a3439f9.js"><link rel="prefetch" href="/assets/js/4.931a76fd.js"><link rel="prefetch" href="/assets/js/5.4e2036ee.js"><link rel="prefetch" href="/assets/js/6.8495fe17.js"><link rel="prefetch" href="/assets/js/7.e3a938be.js"><link rel="prefetch" href="/assets/js/9.3262212b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8eb0d87d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Hello Kennector</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Systems</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://knx.prd.kennectweb.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://acc.prd.kennectweb.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dw.prd.kennectweb.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DW 25
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dsi.prd.kennectweb.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DSI 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://knx.prd.kennectweb.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Emp 30
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Systems</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://knx.prd.kennectweb.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Kennect App
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://acc.prd.kennectweb.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Admin 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dw.prd.kennectweb.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DW 25
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://dsi.prd.kennectweb.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  DSI 20
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://knx.prd.kennectweb.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Emp 30
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Liteweight Business Intellegence</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Forms, Surveys &amp; Quizes</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>Journeys</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>Data Warehouse &amp; Reports</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/dwr/basics.html" class="sidebar-link">Basics</a></li><li><a href="/dwr/advanced.html" class="sidebar-link">Advanced</a></li><li><a href="/dwr/newFeatures.html" aria-current="page" class="active sidebar-link">New Features</a></li></ul></div></li><li><a href="/contact.html" class="sidebar-link">Contact us</a></li></ul> </div> <div class="page"> <div class="content"><p>We will explain how basic configs in dw-reports work.</p> <h1 id="pivot-table"><a href="#pivot-table" class="header-anchor">#</a> pivot table</h1> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;appTitle&quot;: &quot;SnT Report by Omkar&quot;,
+  &quot;layout&quot;: [
+    {
+      &quot;layoutName&quot;: &quot;snt_for_pivot&quot;,
+      &quot;displayName&quot;: &quot;SnT Details&quot;,
+      &quot;ecName&quot;: &quot;snt_for_pivot&quot;,
+      &quot;downloadOptions&quot;: [],
+      &quot;visualElements&quot;: [
+        {
+          &quot;type&quot;: &quot;pivot&quot;,
+          &quot;initial&quot;: {
+            &quot;aggregatorName&quot;: &quot;Average&quot;,
+            &quot;pField&quot;: &quot;AvgSales&quot;,
+            &quot;rows&quot;: [
+              &quot;ZONE&quot;,
+              &quot;TER CODE&quot;
+            ],
+            &quot;cols&quot;: [
+              &quot;Product Name&quot;
+            ]
+          }
+        },
+        {
+          &quot;type&quot;: &quot;table&quot;
+        }
+      ]
+    }
+  ],
+  &quot;filters&quot;: false
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>// root.layout[0].visualElements[0].
+{
+  &quot;type&quot;: &quot;pivot&quot;,
+  &quot;initial&quot;: {
+    &quot;aggregatorName&quot;:&quot;Average&quot;, // any from aggregatorMap given below	
+    &quot;pField&quot;:&quot;AvgSales&quot;, // can be any column with numbers
+    &quot;rows&quot;:[&quot;ZONE&quot;],  // can be any field on which we can group
+    &quot;cols&quot;:[&quot;Product Name&quot;] // can be any field on which we can group
+
+    rowOrder:&quot;value_a_to_z&quot; &quot;key_a_to_z&quot;
+    disabledFromDragDrop: [], // ['Payer Gender'],
+    hiddenFromDragDrop: [],
+    hiddenAttributes: [],
+    hiddenFromAggregators: [],
+    sortonlyFromDragDrop: [], // ['Party Size'],
+    pivotColumns: [&quot;ZONE&quot;, &quot;REGION&quot;, &quot;TER CODE&quot;],	
+  }
+}
+
+// options 
+aggregatorMap: {
+    Count: &quot;Count&quot;,
+    &quot;Count Unique Values&quot;: &quot;Count Unique Values&quot;,
+    &quot;List Unique Values&quot;: &quot;List Unique Values&quot;,
+    Sum: &quot;Sum&quot;,
+    &quot;Integer Sum&quot;: &quot;Integer Sum&quot;,
+    Average: &quot;Average&quot;,
+    Median: &quot;Median&quot;,
+    &quot;Sample Variance&quot;: &quot;Sample Variance&quot;,
+    &quot;Sample Standard Deviation&quot;: &quot;Sample Standard Deviation&quot;,
+    Minimum: &quot;Minimum&quot;,
+    Maximum: &quot;Maximum&quot;,
+    First: &quot;First&quot;,
+    Last: &quot;Last&quot;,
+    &quot;Sum over Sum&quot;: &quot;Sum over Sum&quot;,
+    &quot;Sum as Fraction of Total&quot;: &quot;Sum as Fraction of Total&quot;,
+    &quot;Sum as Fraction of Rows&quot;: &quot;Sum as Fraction of Rows&quot;,
+    &quot;Sum as Fraction of Columns&quot;: &quot;Sum as Fraction of Columns&quot;,
+    &quot;Count as Fraction of Total&quot;: &quot;Count as Fraction of Total&quot;,
+    &quot;Count as Fraction of Rows&quot;: &quot;Count as Fraction of Rows&quot;,
+    &quot;Count as Fraction of Columns&quot;: &quot;Count as Fraction of Columns&quot;,
+},
+	  
+// options	  
+rendererNames: {
+    Table: &quot;Table&quot;,
+    &quot;Table Heatmap&quot;: &quot;Table Heatmap&quot;,
+    &quot;Table Col Heatmap&quot;: &quot;Table Col Heatmap&quot;,
+    &quot;Table Row Heatmap&quot;: &quot;Table Row Heatmap&quot;,
+    &quot;Export Table TSV&quot;: &quot;Export Table TSV&quot;,
+    &quot;Grouped Column Chart&quot;: &quot;Grouped Column Chart&quot;,
+    &quot;Stacked Column Chart&quot;: &quot;Stacked Column Chart&quot;,
+    &quot;Grouped Bar Chart&quot;: &quot;Grouped Bar Chart&quot;,
+    &quot;Stacked Bar Chart&quot;: &quot;Stacked Bar Chart&quot;,
+    &quot;Line Chart&quot;: &quot;Line Chart&quot;,
+    &quot;Dot Chart&quot;: &quot;Dot Chart&quot;,
+    &quot;Area Chart&quot;: &quot;Area Chart&quot;,
+    &quot;Scatter Chart&quot;: &quot;Scatter Chart&quot;,
+    &quot;Multiple Pie Chart&quot;: &quot;Multiple Pie Chart&quot;,
+}
+		  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br></div></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/dwr/advanced.html" class="prev">
+          Advanced
+        </a></span> <span class="next"><a href="/contact.html">
+          Contact us
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.edd9e7ca.js" defer></script><script src="/assets/js/8.49181e46.js" defer></script>
+  </body>
+</html>

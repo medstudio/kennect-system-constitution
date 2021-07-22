@@ -1,9 +1,5 @@
-# Kennect Business Excellence Teams
-
-# welcome
-
+# Welcome Kennect Business Excellence Teams
 ![KBET](./assets/kbet.png)
+![Login](./assets/login.jpg)
 
-We hope you love this tiny tiny site.
-
-Need to [contact someone](./contact.md) on the team?
+We hope you like this tiny tiny site.
