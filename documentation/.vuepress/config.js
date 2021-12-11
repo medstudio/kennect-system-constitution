@@ -10,17 +10,7 @@ module.exports = {
     themeConfig: {
         docsDir: 'documentation',
         nav: [
-            { text: 'Home', link: '/' },
-            {
-                text: 'Systems',
-                items: [
-                    { text: 'Kennect App', link: 'https://knx.prd.kennectweb.com/' },
-                    { text: 'Admin 20', link: 'https://acc.prd.kennectweb.com/' },
-                    { text: 'DW 25', link:  'https://dw.prd.kennectweb.com' },
-                    { text: 'DSI 20', link: 'https://dsi.prd.kennectweb.com' },
-                    { text: 'Emp 30', link: 'https://knx.prd.kennectweb.com' },
-                ]
-            },
+            { text: 'Home', link: '/' }
         ],
         sidebar: [
             ['/', 'Home'],

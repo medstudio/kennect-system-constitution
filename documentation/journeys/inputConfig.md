@@ -66,7 +66,7 @@
     "ftpConf": {
         "host": "ftp.dlptest.com",
         "user": "dlpuser@dlptest.com",
-        "password": "e73jzTRTNqCN9PYAAjjn",
+        "password": "sadsdsasc",
         "timeDiffInHours": 24
     },
     "delimiter": "," // ","  "|"  "\t"  "auto" or array of these link: https://www.npmjs.com/package/csvtojson
@@ -176,7 +176,7 @@
     "emailConfig": {
         "user": "test@kennect.in",
         "password": "asdasd",
-        "host": "secureserver.net",
+        "host": "some-email-server.net",
         "port": 993,
         "tls": true
     }
@@ -377,7 +377,7 @@
          "host": "111.211.3111.119:27017",
          "dbName": "database_name",
          "un": "username",
-         "pw": "password"
+         "pw": "ascscascd"
      }
  }
 ```

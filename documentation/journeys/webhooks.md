@@ -6,7 +6,7 @@
 {
     "event": "onComplete",
     "type": "http",
-    "uri": "https://ix.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
+    "uri": "https://some.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
     "secret": "",
     "headers": {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@
 {
     "event": "onError",
     "type": "http",
-    "uri": "https://ix.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
+    "uri": "https://some.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
     "secret": "",
     "headers": {
         "Content-Type": "application/json",
@@ -46,7 +46,7 @@
 {
     "event": "onFTPError",
     "type": "http",
-    "uri": "https://ix.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
+    "uri": "https://some.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
     "secret": "",
     "headers": {
         "Content-Type": "application/json",
@@ -66,7 +66,7 @@
 {
     "event": "onAutoKill",
     "type": "http",
-    "uri": "https://ix.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
+    "uri": "https://some.kennectweb.com/node/api/v1.3/tenant/channel/send-custom-email",
     "secret": "",
     "headers": {
         "Content-Type": "application/json",

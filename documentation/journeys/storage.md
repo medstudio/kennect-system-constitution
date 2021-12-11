@@ -28,9 +28,9 @@
     "type": "ftp",
     "ftpConf": {
         "primary": true,
-        "host": "flo.kennectweb.com",
+        "host": "some_ftp.kennectweb.com",
         "user": "alkem_ss",
-        "password": "welcome123", 
+        "password": "77889", 
         "port" : 21         
     },
     "out": [ 
